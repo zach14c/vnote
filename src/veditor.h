@@ -154,6 +154,9 @@ public:
 
     virtual bool setCursorPosition(int p_blockNumber, int p_posInBlock);
 
+    // Request text completion.
+    virtual void requestCompletion(bool p_next);
+
 // Wrapper functions for QPlainTextEdit/QTextEdit.
 // Ends with W to distinguish it from the original interfaces.
 public:

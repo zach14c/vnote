@@ -1100,3 +1100,8 @@ bool VEditor::setCursorPosition(int p_blockNumber, int p_posInBlock)
     setTextCursorW(cursor);
     return true;
 }
+
+void VEditor::requestCompletion(bool p_next)
+{
+
+}

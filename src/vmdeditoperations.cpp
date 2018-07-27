@@ -431,6 +431,26 @@ bool VMdEditOperations::handleKeyPressEvent(QKeyEvent *p_event)
         break;
     }
 
+    case Qt::Key_N:
+    {
+        if (VUtils::isControlModifierForVim(modifiers)) {
+            // Completion.
+            m_editor->requestCompletion(true);
+        }
+
+        break;
+    }
+
+    case Qt::Key_P:
+    {
+        if (VUtils::isControlModifierForVim(modifiers)) {
+            // Completion.
+            m_editor->requestCompletion(false);
+        }
+
+        break;
+    }
+
     default:
         break;
     }
